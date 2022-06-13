@@ -1,5 +1,3 @@
-import styled from 'styled-components';
-import Image from 'next/image'
 import HeroSection from './HeroSection'
 
 // const Background=styled.div`
