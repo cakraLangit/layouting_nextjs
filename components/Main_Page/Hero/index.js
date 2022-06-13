@@ -14,8 +14,8 @@ import HeroSection from './HeroSection'
  function Hero() {
   return (
       <>
-    <div className='bg-gradient-to-b from-secondary to-primary  md:h-max h-[20rem]'>
-    <div className="container mx-auto flex flex-row items-center px-5 md:px-1 lg:px-10 hero-content  py-8 md:py-40 lg:py-20">
+    <div className='bg-gradient-to-b from-secondary to-primary  md:h-max h-[22rem]'>
+    <div className="container mx-auto flex flex-row items-center px-5 md:px-1 lg:px-10 hero-content  mt-10 sm:mt-0 md:py-32 lg:py-20">
       <HeroSection
        img ='/handPhone.jpg'
        text1 ='Play millions of'

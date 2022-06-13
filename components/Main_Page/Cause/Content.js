@@ -2,7 +2,7 @@ import Image from "next/image"
 export default function Content({img,text,title,center}) {
   return (
    <>
-   <div className=" flex  flex-col" key={text} data-aos="zoom-out" data-aos-offset="190" data-aos-easing="ease-in-sine" data-aos-duration="600" >        
+   <div className=" flex  flex-col" key={text} data-aos="fade-up" data-aos-offset="190" data-aos-easing="ease-in-sine" data-aos-duration="600" >        
          <Image
            src={img}
            width={180}

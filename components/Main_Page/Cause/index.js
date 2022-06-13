@@ -5,7 +5,7 @@ const data=[
     img:'/circle_1.svg',
     text:'Play your favorites.',
     center:true,
-    title:'Listen to the songs you love, and discover new music and podcasts.'
+    title: <>{'Listen to the songs you love, and'}<br/> {'discover new music and podcasts.'}</>
   },
   {
     img:'/circle_2.svg',
