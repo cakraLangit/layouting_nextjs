@@ -1,5 +1,5 @@
 import Image from "next/image"
-import Content from "./content"
+import Content from "./Content"
 const data=[
   {
     img:'/circle_1.svg',

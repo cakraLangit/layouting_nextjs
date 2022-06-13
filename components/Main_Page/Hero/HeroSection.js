@@ -1,10 +1,11 @@
 // import {motion} from "framer-motion"
+import Image from "next/image";
 export default function HeroSection({ img, text1, text2, text3, button }) {
 
   return (
     <>  
       <div className="lg:w-4/12  hidden lg:flex" >
-        <img  data-aos="fade-right" src={img} className="max-w-sm rounded-2xl border-transparent shadow-2xl "  width={400} height={600}/>
+        <Image data-aos="fade-right" src={img} className="max-w-sm rounded-2xl border-transparent shadow-2xl "  width={400} height={600} alt="hand-phone"/>
       </div>
       <div data-aos="fade-left" className="  md:ml-5 lg:ml-10 w-full lg:w-8/12 flex-col text-white  lg:px-10  px-5 md:-my-20 ">
 
