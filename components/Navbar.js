@@ -21,7 +21,8 @@ const data=[
     },
     {
       text:"|",
-      hover:true
+      hover:true,
+      underline:true
     },
     {
       text:"Sign Up",
@@ -53,11 +54,15 @@ export default function Navbar() {
       <a className="ml-4 normal-case text-2xl font-bold  hidden lg:flex pb-2  text-white">Spotify</a>
     </div>
     <div className="flex  w-10/12 lg:8/12 justify-end">
-    {data.map(({text,href,active,hover})=> (  
-      <ul key={text} className="  flex-row hidden lg:flex  py-3 ">
+    {data.map(({text,href,active,hover,underline})=> (  
+      <ul key={text} className="  flex-row hidden lg:flex  py-3">
         <li className="mr-4">
-        <a className={` text-xl font-medium  hover:secondary  transition duration-0 hover:duration-200 ${active ? "text-secondary " : "text-white"} ${hover ? "hover:text-white" : "hover:text-secondary"} `} href={href}> 
-        <span className="px-2"/> {text} 
+        <a className={`pb-1 link-underline link-underline-black text-xl font-medium  hover:secondary  transition duration-0 hover:duration-200
+         ${active ? "text-secondary " : "text-white"} 
+         ${hover ? "hover:text-white" : "hover:text-secondary"} 
+         ${underline ? "link-underline-none link-underline-black-none" : "link-underline link-underline-black "}`}
+         href={href}> 
+         {text} 
         </a>
         </li> 
      </ul>
