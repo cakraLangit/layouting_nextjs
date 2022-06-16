@@ -5,7 +5,7 @@ import Layout from '../components/Layout'
 import Hero from '../components/Main_Page/Hero'
 import Cause from '../components/Main_Page/Cause'
 import WhyPage from '../components/Main_Page/WhyPage'
-import Table from '../components/Main_Page/Table'
+import Faq from '../components/Main_Page/Faq'
 
 export default function Home() {
   return (
@@ -15,7 +15,17 @@ export default function Home() {
      <Hero/>
      <Cause/>
      <WhyPage/>
-     <Table/>
+
+      <div className='bg-white min-h-max py-10'>
+      <h1 className="overflow-hidden  -mt-5
+            lg:text-6xl md:text-7xl sm:text-6xl text-4xl  
+            lg:font-black font-bold  md:leading-tight lg:leading-normal 
+            text-center text-black"> Got questions? 
+        </h1>
+      <div className='container mx-auto px-10  mt-5'>
+      <Faq/>
+     </div>
+     </div>
    </Layout>
    </div>
    </>

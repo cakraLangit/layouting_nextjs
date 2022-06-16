@@ -30,19 +30,21 @@ export default function index() {
   return (
     <div className="bg-white">  
     <div className="container mx-auto px-12 md:px-7 h-min ">
-      <div className="flex justify-center items-center -mt-5">
-      <Image
-      src='/arrow.svg'
-      width={53}
-      height={53}
-      alt="arrow-button"
-      className="ball shadow-lg "
-      />
+      <div  className="flex justify-center items-center -mt-5">
+      <a href="#card">
+        <Image
+        src='/arrow.svg'
+        width={53}
+        height={53}
+        alt="arrow-button"
+        className="ball shadow-lg "
+        />
+      </a>  
       </div>
-      <h1 className="-mb-20 py-10 text-center text-black   lg:text-6xl md:text-7xl sm:text-5xl text-3xl font-black leading-tight">
+      <h1 className="-mb-20 py-10 text-center text-black   lg:text-6xl md:text-7xl sm:text-5xl text-4xl font-black leading-tight">
         Why Spotify?
       </h1>
-      <div className="grid  jusfity-center items-center lg:grid-rows-1 md:grid-rows-2 grid-rows-4  grid-flow-col  gap-5  py-20">
+      <div  id="card" className="  grid  jusfity-center items-center lg:grid-rows-1 md:grid-rows-2 grid-rows-4  grid-flow-col  gap-5  py-20">
         {data.map(({img,text,title,center})=>(
           <Content
           key={text}

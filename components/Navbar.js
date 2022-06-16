@@ -57,7 +57,8 @@ export default function Navbar() {
     {data.map(({text,href,active,hover,underline})=> (  
       <ul key={text} className="  flex-row hidden lg:flex  py-3">
         <li className="mr-4">
-        <a className={`pb-1 link-underline link-underline-black text-xl font-medium  hover:secondary  transition duration-0 hover:duration-200
+        <a className=
+         {`pb-1 link-underline link-underline-black text-xl font-medium  hover:secondary  transition duration-0 hover:duration-200
          ${active ? "text-secondary " : "text-white"} 
          ${hover ? "hover:text-white" : "hover:text-secondary"} 
          ${underline ? "link-underline-none link-underline-black-none" : "link-underline link-underline-black "}`}
@@ -67,7 +68,6 @@ export default function Navbar() {
         </li> 
      </ul>
        ) )}
-
       <button className="-mx-2 sm:mx-0 lg:hidden btn btn-square bg-black hover:bg-black">
        <Image
        src="/menu.svg"
